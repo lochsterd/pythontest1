@@ -5,6 +5,8 @@ function setupLevel (level: number) {
     	
     }
 }
+let mySprite: Sprite = null
 let currentlevel = 1
-let mySprite = sprites.create(assets.image`tom tv`, SpriteKind.Player)
+controller.moveSprite(mySprite)
+mySprite = sprites.create(assets.image`tom tv`, SpriteKind.Player)
 setupLevel(currentlevel)
